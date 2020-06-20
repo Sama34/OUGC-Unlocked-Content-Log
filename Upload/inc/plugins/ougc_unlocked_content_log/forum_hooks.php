@@ -324,6 +324,17 @@ function modcp_start()
 
 		$forums = build_forum_jump(0, $build_url['fid'], true, '', false, true, '', 'filter[fid]');
 
+		$selected = '';
+
+		if(!$build_url['fid'])
+		{
+			$selected = ' selected="selected"';
+		}
+
+		$additional = eval($templates->render('ougcunlockedcontentlog_filter_forum'));
+
+		$forums = str_replace('</select>', $additional.'</select>', $forums);
+
 		$modpanel = eval($templates->render('ougcunlockedcontentlog_filter'));
 	}
 

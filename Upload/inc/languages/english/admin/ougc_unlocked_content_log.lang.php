@@ -37,4 +37,5 @@ $l = [
 	'setting_ougc_unlocked_content_log_modgroups' => 'Select which groups can search unlocked content by user in the ModCp.',
 	'setting_ougc_unlocked_content_log_perpage' => 'List Multipage',
 	'setting_ougc_unlocked_content_log_perpage_desc' => 'Insert the maximum items to display per page.',
+	'ougc_unlocked_content_log_pluginlibrary' => 'This plugin requires <a href="{1}">PluginLibrary</a> version {2} or later to be uploaded to your forum.'
 ];

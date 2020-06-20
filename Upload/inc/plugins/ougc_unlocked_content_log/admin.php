@@ -36,7 +36,7 @@ function _info()
 	\OUGCUnlockedContentLog\Core\load_language();
 
 	return [
-		'name'			=> 'OUGC Unlocked Content Log Rewards',
+		'name'			=> 'OUGC Unlocked Content Log',
 		'description'	=> $lang->setting_group_ougc_unlocked_content_log_desc,
 		'website'		=> 'https://ougc.network',
 		'author'		=> 'Omar G.',
