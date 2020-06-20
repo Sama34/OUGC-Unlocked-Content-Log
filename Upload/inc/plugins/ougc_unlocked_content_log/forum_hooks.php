@@ -29,6 +29,43 @@
 
 namespace OUGCUnlockedContentLog\ForumHooks;
 
+function global_start()
+{
+	global $templatelist, $mybb;
+
+	if(isset($templatelist))
+	{
+		$templatelist .= ',';
+	}
+	else
+	{
+		$templatelist = '';
+	}
+
+	if(defined('THIS_SCRIPT'))
+	{
+		if(THIS_SCRIPT == 'usercp.php')
+		{
+			$templatelist .= ',ougcunlockedcontentlog_usercp_nav';
+
+			if($mybb->get_input('action') == 'unlocked_content')
+			{
+				$templatelist .= ',ougcunlockedcontentlog_content_empty, ougcunlockedcontentlog_content, ougcunlockedcontentlog';
+			}
+		}
+
+		if(THIS_SCRIPT == 'modcp.php')
+		{
+			$templatelist .= ',ougcunlockedcontentlog_modcp_nav';
+
+			if($mybb->get_input('action') == 'unlocked_content')
+			{
+				$templatelist .= ',ougcunlockedcontentlog_content_empty, ougcunlockedcontentlog_content, ougcunlockedcontentlog_filter_forum, ougcunlockedcontentlog_filter, ougcunlockedcontentlog';
+			}
+		}
+	}
+}
+
 function usercp_start()
 {
 	modcp_start();
