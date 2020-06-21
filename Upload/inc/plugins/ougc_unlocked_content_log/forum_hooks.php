@@ -181,6 +181,13 @@ function modcp_start()
 		while($pids[] = (int)$db->fetch_field($query, 'pid'));
 	}
 
+	if(function_exists('hidden_info'))
+	{
+		$query = $db->simple_select('hidden', 'pid', "uid='{$uid}'");
+
+		while($pids[] = (int)$db->fetch_field($query, 'pid'));
+	}
+
 	if(function_exists('lock_info'))
 	{
 		switch($db->type)
