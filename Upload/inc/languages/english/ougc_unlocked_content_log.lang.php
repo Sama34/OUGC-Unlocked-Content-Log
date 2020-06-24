@@ -29,10 +29,10 @@
 
 $l = [
 	'setting_group_ougc_unlocked_content_log' => 'OUGC Unlocked Content Log',
-	'setting_group_ougc_unlocked_content_log_nav' => 'Unlocked Content Log',
-	'setting_group_ougc_unlocked_content_log_content_empty' => 'There are currently no posts to display.',
-	'setting_group_ougc_unlocked_content_log_filter' => 'Filter',
-	'setting_group_ougc_unlocked_content_log_filter_username' => 'Username',
-	'setting_group_ougc_unlocked_content_log_filter_forum' => 'Forum',
+	'ougc_unlocked_content_log_nav' => 'Unlocked Content Log',
+	'ougc_unlocked_content_log_content_empty' => 'There are currently no posts to display.',
+	'ougc_unlocked_content_log_filter' => 'Filter',
+	'ougc_unlocked_content_log_filter_username' => 'Username',
+	'ougc_unlocked_content_log_filter_forum' => 'Forum',
 	'ougc_unlocked_content_log_all' => 'All forums',
 ];
