@@ -385,4 +385,6 @@ function modcp_start()
 	$page = eval($templates->render('ougcunlockedcontentlog'));
 
 	output_page($page);
+
+	exit;
 }

@@ -143,10 +143,6 @@ function _deactivate()
 	find_replace_templatesets('usercp_nav_misc', '#'.preg_quote('<!--OUGC_UNLOCKED_CONTENT_LOG-->').'#i', '', 0);
 }
 
-function _install()
-{
-}
-
 function _is_installed()
 {
 	global $cache;

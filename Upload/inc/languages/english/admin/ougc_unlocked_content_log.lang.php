@@ -30,7 +30,6 @@
 $l = [
 	'setting_group_ougc_unlocked_content_log' => 'OUGC Unlocked Content Log',
 	'setting_group_ougc_unlocked_content_log_desc' => 'Display unlocked content list in UserCP and ModCP for the Hide Content and OUGC Lock plugins.',
-	'ougc_unlocked_content_log' => '',
 	'setting_ougc_unlocked_content_log_groups' => 'Allowed Groups',
 	'setting_ougc_unlocked_content_log_groups_desc' => 'Select which groups can see their own unlocked content in the UserCP.',
 	'setting_ougc_unlocked_content_log_modgroups' => 'Moderator Groups',
