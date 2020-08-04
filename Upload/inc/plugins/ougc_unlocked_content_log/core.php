@@ -135,15 +135,3 @@ function build_url($urlappend=[])
 
 	return $PL->url_append(get_url(), $urlappend, '&amp;', true);
 }
-
-function generate_code(&$code)
-{
-	srand((double)microtime()*1000000);
-
-    $code = '';
-
-	for($i=1; $i <= 15; ++$i)
-	{
-		$code .= substr('abcdefghijklmnopqrstuvwxyz0123456789', rand() % 33, 1);
-    }
-}

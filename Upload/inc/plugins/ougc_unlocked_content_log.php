@@ -67,12 +67,6 @@ function ougc_unlocked_content_log_deactivate()
 	\OUGCUnlockedContentLog\Admin\_deactivate();
 }
 
-// Install the plugin.
-function ougc_unlocked_content_log_install()
-{
-	\OUGCUnlockedContentLog\Admin\_install();
-}
-
 // Check if installed.
 function ougc_unlocked_content_log_is_installed()
 {
